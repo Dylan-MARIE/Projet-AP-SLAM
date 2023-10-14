@@ -1,41 +1,38 @@
-﻿/*Début du menu*/
-
+﻿/* Début du menu */
 *{
-    margin:0px;
-    padding:0px;
-    font-family:Avenir, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
 }
 
 nav{
-    width:100%;
+    width: 100%;
     margin: 0 auto;
-    background-color:#232323;
+    background-color: #232323;
     position: sticky;
 }
 
 nav ul{
-    list-style-type:none;
+    list-style-type: none;
 }
 
 nav ul li{
-    float:left;
-    width:25%;
-    text-align:center;
-    position:relative;
+    float: left;
+    position: relative;
 }
 
 nav ul::after{
-    content:"";
-    display:table;
-    clear:both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 nav a{
-    display:block;
-    text-decoration:none;
-    color:#FFFFFF;
-    border-bottom:2px solid transparent;
-    padding: 10px 0px;
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    border-bottom: 2px solid transparent;
+    padding: 15px 0px;
 }
 
 nav a:hover{
@@ -45,46 +42,52 @@ nav a:hover{
 }
 
 .sous{
-    display:none;
+    display: none;
     box-shadow: 0px 1px 2px #FFFFFF;
-    background-color:#232323;
-    position:absolute;
-    width:100%;
-    z-index:1000;
+    background-color: #232323;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    text-align:center;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
-/*Cible un sous menu ".sous" lorsqu’un utilisateur passe sa souris sur un éléments li de la liste représentant notre menu principal.*/
-nav > ul li:hover .sous {
+/* Cible un sous-menu ".sous" lorsqu’un utilisateur passe sa souris sur un élément li de la liste représentant notre menu principal. */
+nav > ul li:hover .sous{
     display: block;
+    width: auto; 
 }
 
 .sous li{
-    float:none;
-    width:100%;
+    width: 100%;
 }
 
 .sous a{
-    padding:10px;
-    border-bottom:none;
+    padding: 10px;
+    border-bottom: none;
 }
 
 .sous a:hover{
-    border-bottom:none;
-    background-color:#474747;
+    border-bottom: none;
+    background-color: #353535;
 }
 
-.deroulant > a::after {
-    content: "▼";
-    font-size:12px;
-    padding-left:3px;
-}
+/* Fin du menu */
 
-/*Fin du menu*/
-
-section:not(:target), section:target ~ #page {
+blockquote{
     display: none;
 }
 
-section:targent{
-    display:block;
+blockquote:target{
+    display: block;
+    padding: 12px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #FF1654;
+}
+
+i{
+    padding-left: 100px;
+    padding-right:100px;
 }
