@@ -2,7 +2,11 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Avenir, sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.nav-container{
+    height:auto;
 }
 
 nav{
@@ -10,6 +14,8 @@ nav{
     margin: 0 auto;
     background-color: #232323;
     position: sticky;
+    top:0;
+    font-size:25px;
 }
 
 nav ul{
@@ -33,11 +39,13 @@ nav a{
     color: #FFFFFF;
     border-bottom: 2px solid transparent;
     padding: 15px 0px;
+    font-size:15px;
+    
 }
 
 nav a:hover{
     color: deepskyblue;
-    border-bottom: 2px solid deepskyblue;
+    border-bottom: 2px solid #00bfff;
     transition: 0.5s;
 }
 
@@ -84,10 +92,37 @@ blockquote:target{
     padding: 12px;
     font-size: 12px;
     color: #fff;
-    background-color: #FF1654;
+    background-color: #00bfff;
 }
 
-i{
+a > i{
     padding-left: 100px;
     padding-right:100px;
+    font-size: 20px;
+}
+
+p{
+    color:white;
+    display:flex;
+    align-content: center;
+}
+
+.titre{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);   
+    color:#FFFFFF;
+    text-transform:uppercase;
+}
+
+.arrows{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+.arrows i {
+    font-size:20px; /* Vous pouvez ajuster la taille de vos flèches ici */
+    margin:0 10px; /* Cela ajoutera un espace de 5 pixels entre les flèches horizontalement */
 }
