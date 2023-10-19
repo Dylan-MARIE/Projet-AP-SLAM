@@ -1,21 +1,34 @@
-﻿/* Début du menu */
-*{
+﻿*{
     margin: 0px;
     padding: 0px;
+    border:0px;
     font-family: 'Darker Grotesque', sans-serif;
 }
 
-.nav-container{
-    height:auto;
-}
+/*************************************************************
+*********** NAV
+**************************************************************/
 
 nav{
-    width: 100%;
-    margin: 0 auto;
+    width: 217px;
     background-color: #232323;
     position: sticky;
-    top:0;
+    top:0px;
+    left:0px;
     font-size:25px;
+    height: 50px;
+    z-index:20;
+    border-bottom: solid 2px transparent;
+}
+
+nav:hover{
+    border-bottom: solid 2px deepskyblue;
+    transition:0.5s;
+}
+
+nav a:hover > i{
+    color:deepskyblue;
+    transition: 0.5s;
 }
 
 nav ul{
@@ -33,96 +46,108 @@ nav ul::after{
     clear: both;
 }
 
+nav a > i{
+    padding-left: 100px;
+    padding-right:100px;
+    font-size: 20px;
+}
+
 nav a{
     display: block;
     text-decoration: none;
     color: #FFFFFF;
     border-bottom: 2px solid transparent;
     padding: 15px 0px;
-    font-size:15px;
-    
+    font-size:15px;  
 }
 
-nav a:hover{
-    color: deepskyblue;
-    border-bottom: 2px solid #00bfff;
-    transition: 0.5s;
+/* Cible un sous-menu ".sous" lorsqu’un utilisateur passe sa souris sur un élément de la liste représentant notre menu principal. */
+nav > ul li:hover .sous{
+    display: block;
+    width: auto;
 }
 
-.sous{
+nav .sous{
     display: none;
     box-shadow: 0px 1px 2px #FFFFFF;
     background-color: #232323;
     position: absolute;
     width: 100%;
-    z-index: 1000;
+    z-index: 10;
     text-align:center;
     text-transform: uppercase;
     font-size: 12px;
 }
 
-/* Cible un sous-menu ".sous" lorsqu’un utilisateur passe sa souris sur un élément li de la liste représentant notre menu principal. */
-nav > ul li:hover .sous{
-    display: block;
-    width: auto; 
-}
-
-.sous li{
+nav .sous li{
     width: 100%;
 }
 
-.sous a{
+nav .sous a{
     padding: 10px;
     border-bottom: none;
 }
 
-.sous a:hover{
+nav .sous a:hover{
     border-bottom: none;
     background-color: #353535;
+    color:deepskyblue;
+    transition:0.5s;
 }
 
-/* Fin du menu */
+/*************************************************************
+*********** SECTION
+**************************************************************/
 
-blockquote{
-    display: none;
+section{
+    display: none;   
 }
 
-blockquote:target{
+section:target{
     display: block;
     padding: 12px;
     font-size: 12px;
     color: #fff;
-    background-color: #00bfff;
+    background-color: deepskyblue;
 }
 
-a > i{
-    padding-left: 100px;
-    padding-right:100px;
-    font-size: 20px;
-}
-
-p{
-    color:white;
+section h1{
+    position:fixed;
+    top:0px;
+    right:0px;
+    left:0px;
+    height:50px;
+    width:100%;
     display:flex;
-    align-content: center;
+    align-items:center;
+    justify-content:center;
+    background-color:#232323;
+    text-transform:uppercase;
+    font-size:20px;
+    font-weight:lighter;
+    border-bottom:solid 2px #232323;
 }
 
-.titre{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);   
-    color:#FFFFFF;
-    text-transform:uppercase;
+/*************************************************************
+*********** FOOTER
+**************************************************************/
+
+footer{
+    position:fixed;
+    width:100%;
+    bottom:0px;
+    left:0px;
+    text-align:center;
+    padding-bottom:5px;
 }
 
 .arrows{
-    display: flex;
-    justify-content: center;
+    display:flex;
+    justify-content:center;
     align-items:flex-end;
 }
 
-.arrows i {
-    font-size:20px; /* Vous pouvez ajuster la taille de vos flèches ici */
-    margin:0 10px; /* Cela ajoutera un espace de 5 pixels entre les flèches horizontalement */
+.arrows i{
+    font-size:20px;
+    margin:0px 10px;
 }
