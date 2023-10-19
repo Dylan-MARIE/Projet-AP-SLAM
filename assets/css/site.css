@@ -10,7 +10,7 @@
 **************************************************************/
 
 nav{
-    width: 217px;
+    width: 218px;
     background-color: #232323;
     position: sticky;
     top:0px;
@@ -89,7 +89,6 @@ nav .sous a{
 }
 
 nav .sous a:hover{
-    border-bottom: none;
     background-color: #353535;
     color:deepskyblue;
     transition:0.5s;
@@ -137,17 +136,8 @@ footer{
     width:100%;
     bottom:0px;
     left:0px;
-    text-align:center;
     padding-bottom:5px;
-}
-
-.arrows{
-    display:flex;
-    justify-content:center;
-    align-items:flex-end;
-}
-
-.arrows i{
     font-size:20px;
-    margin:0px 10px;
+    display:flex;
+    justify-content: center;
 }
