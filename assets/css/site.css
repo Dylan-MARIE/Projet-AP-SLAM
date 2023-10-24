@@ -158,7 +158,8 @@ footer a:hover span{
 .arrow-color-left, .arrow-color-right{
     color:#FFFFFF;
     text-align:center;
-    padding:30px;
+    padding-left:15px;
+    padding-right:15px;
 }
 
 .arrow-color-left:hover, .arrow-color-right:hover{
