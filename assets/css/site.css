@@ -1,4 +1,4 @@
-﻿*{
+*{
     margin: 0px;
     padding: 0px;
     border:0px;
@@ -10,24 +10,23 @@
 **************************************************************/
 
 nav{
-    width: 218px;
+    width:217.33px;
     background-color: #232323;
     position: sticky;
     top:0px;
     left:0px;
-    font-size:25px;
     height: 50px;
     z-index:20;
     border-bottom: solid 2px transparent;
 }
 
 nav:hover{
-    border-bottom: solid 2px deepskyblue;
+    border-bottom: solid 2px #82e08f;
     transition:0.5s;
 }
 
 nav a:hover > i{
-    color:deepskyblue;
+    color:#82e08f;
     transition: 0.5s;
 }
 
@@ -56,27 +55,23 @@ nav a{
     display: block;
     text-decoration: none;
     color: #FFFFFF;
-    border-bottom: 2px solid transparent;
     padding: 15px 0px;
-    font-size:15px;  
+    font-size:15px;
 }
 
-/* Cible un sous-menu ".sous" lorsqu’un utilisateur passe sa souris sur un élément de la liste représentant notre menu principal. */
 nav > ul li:hover .sous{
     display: block;
-    width: auto;
 }
 
 nav .sous{
     display: none;
-    box-shadow: 0px 1px 2px #FFFFFF;
     background-color: #232323;
     position: absolute;
     width: 100%;
     z-index: 10;
     text-align:center;
     text-transform: uppercase;
-    font-size: 12px;
+    margin-top:-0.25px;
 }
 
 nav .sous li{
@@ -90,7 +85,7 @@ nav .sous a{
 
 nav .sous a:hover{
     background-color: #353535;
-    color:deepskyblue;
+    color:#82e08f;
     transition:0.5s;
 }
 
@@ -107,7 +102,7 @@ section:target{
     padding: 12px;
     font-size: 12px;
     color: #fff;
-    background-color: deepskyblue;
+    background-color:#82e08f;
 }
 
 section h1{
@@ -136,8 +131,37 @@ footer{
     width:100%;
     bottom:0px;
     left:0px;
-    padding-bottom:5px;
-    font-size:20px;
+    font-size:17.5px;
+    height:50px;
     display:flex;
-    justify-content: center;
+    justify-content:center;
+    align-items:center;
+    background-color:#232323;
+}
+
+footer a{
+    text-decoration:none;
+    margin-right:10px;
+    margin-left:-10px;
+}
+
+footer span{
+    opacity:0;
+}
+
+footer a:hover span{
+    opacity:1;
+    color:#82e08f;
+    transition:0.5s;
+}
+
+.arrow-color-left, .arrow-color-right{
+    color:#FFFFFF;
+    text-align:center;
+    padding:30px;
+}
+
+.arrow-color-left:hover, .arrow-color-right:hover{
+    color:#82e08f;
+    transition:0.5s;
 }

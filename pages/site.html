@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="./../assets/css/site.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.g oogleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
         <ul>
             <li class="deroulant">
-                <a href="#"><i class="fa-solid fa-bars"></i></a>
+                <a href="#accueil"><i class="fa-solid fa-bars"></i></a>
                 <ul class="sous">
                     <li><a href="#accueil">accueil</a></li>
                     <li><a href="#a-propos">à propos</a></li>
@@ -26,52 +26,93 @@
     </nav>
     <section id="accueil">
         <h1>Accueil</h1>
-        La chute de l'empire romain d'Orient eut lieu le 29 Mai 1453
+        Prénom + Nom + Photo d'illustration
         <footer>
-            <a href="#contact"><i class="fa-solid fa-arrow-left-long"></i></a>
-            <a href="#a-propos"><i class="fa-solid fa-arrow-right-long"></i></a>
+            <a class="arrow-color-left" href="#contact">
+                <span class="arrow-color-right">Page précédente</span>
+                <i class="fa-solid fa-arrow-left-long"></i>
+            </a>
+            <a class="arrow-color-right" href="#a-propos">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span class="arrow-color-right">Page suivante</span></a>
         </footer>
     </section>
+ 
     <section id="a-propos">
         <h1>à propos</h1>
-        Le roi Francois 1er s'allia à l'empire Ottoman en 1536
+        Une accroche + Un paragraphe de présentation + Photo d'illustration
         <footer>
-            <a href="#accueil"><i class="fa-solid fa-arrow-left-long"></i></a>
-            <a href="#competences"><i class="fa-solid fa-arrow-right-long"></i></a>
+            <a class="arrow-color-left" href="#accueil">
+                <span class="arrow-color-right">Page précédente</span>
+                <i class="fa-solid fa-arrow-left-long"></i>
+            </a>
+            <a class="arrow-color-right" href="#competences">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span class="arrow-color-right">Page suivante</span>
+            </a>
         </footer>
     </section>
+ 
     <section id="competences">
         <h1>Compétences</h1>
-        Ouverture des États Généraux à Versailles le 5 mai 1789
+        Domaines(développement + réseau + langues) + Items pour chaque domaine (html, css, php, sql) / Pour chaque item : niveau sous la forme d'une barre ou d'étoiles + score aux certificats (voltaire, tosa, cisco, microsoft)
         <footer>
-            <a href="#a-propos"><i class="fa-solid fa-arrow-left-long"></i></a>
-            <a href="#experience"><i class="fa-solid fa-arrow-right-long"></i></a>
+            <a class="arrow-color-left" href="#a-propos">
+                <span class="arrow-color-right">Page précédente</span>
+                <i class="fa-solid fa-arrow-left-long"></i>
+            </a>
+            <a class="arrow-color-right" href="#experience">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span class="arrow-color-right">Page suivante</span>
+            </a>
         </footer>
     </section>
+   
     <section id="experience">
         <h1>Expérience</h1>
-        Assassinat d'Henri IV par Ravaillac en 1610
+        Décrire chaque expérience : poste occupé / entreprise / date de début / date de fin / lieu / tâches réalisées + LIEN VERS CV EN PDF
         <footer>
-            <a href="#competences"><i class="fa-solid fa-arrow-left-long"></i></a>
-            <a href="#formation"><i class="fa-solid fa-arrow-right-long"></i></a>
+            <a class="arrow-color-left" href="#competences">
+                <span class="arrow-color-right">Page précédente</span>
+                <i class="fa-solid fa-arrow-left-long"></i>
+            </a>
+            <a class="arrow-color-right" href="#formation">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span class="arrow-color-right">Page suivante</span>
+            </a>
         </footer>
     </section>
+  
     <section id="formation">
         <h1>Formation</h1>
-        Sacre de l'Empereur Charlemagne en l'an 800
+        Décrire chaque formation : Nom de la formation / Etablissement / Date de début / Date de fin / Lieu / Contenu de la formation + LIEN VERS CV EN PDF
         <footer>
-            <a href="#experience"><i class="fa-solid fa-arrow-left-long"></i></a>
-            <a href="#contact"><i class="fa-solid fa-arrow-right-long"></i></a>
+            <a class="arrow-color-left" href="#experience">
+                <span class="arrow-color-right">Page précédente</span>
+                <i class="fa-solid fa-arrow-left-long"></i>
+            </a>
+            <a class="arrow-color-right" href="#contact">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span class="arrow-color-right">Page suivante</span>
+            </a>
         </footer>
     </section>
+  
     <section id="contact">
         <h1>Contact</h1>
-        Début de la guerre de cent ans en 1337
+        Formulaire de contact : Nom de l'expéditeur / Adresse de courriel de l'expéditeur / Objet du message / Contenu du message / Captcha pour éviter les robots / Envoi d'un mail vers mon adresse email
         <footer>
-            <a href="#formation"><i class="fa-solid fa-arrow-left-long"></i></a>
-            <a href="#accueil"><i class="fa-solid fa-arrow-right-long"></i></a>
-        </footer>
+            <a class="arrow-color-left" href="#formation">
+                <span class="arrow-color-right">Page précédente</span>
+                <i class="fa-solid fa-arrow-left-long"></i>
+            </a>
+            <a class="arrow-color-right" href="#accueil">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span class="arrow-color-right">Page suivante</span>
+            </a>
+        </footer>      
     </section>
+
     <script src="https://kit.fontawesome.com/9dc810df0d.js" crossorigin="anonymous"></script>
     <script src="./../assets/js/site.js"></script> 
     <h1 class="arrows">
