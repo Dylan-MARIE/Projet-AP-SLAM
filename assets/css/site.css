@@ -1,8 +1,12 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin:0px;
+    padding:0px;
     border:0px;
-    font-family: 'Darker Grotesque', sans-serif;
+    font-family:'Darker Grotesque', sans-serif;
+}
+
+body{
+    background-color: #232323;
 }
 
 /*************************************************************
@@ -17,12 +21,6 @@ nav{
     left:0px;
     height: 50px;
     z-index:20;
-    border-bottom: solid 2px transparent;
-}
-
-nav:hover{
-    border-bottom: solid 2px #82e08f;
-    transition:0.5s;
 }
 
 nav a:hover > i{
@@ -72,6 +70,7 @@ nav .sous{
     text-align:center;
     text-transform: uppercase;
     margin-top:-0.25px;
+    border:1px solid #82e08f;
 }
 
 nav .sous li{
@@ -102,7 +101,6 @@ section:target{
     padding: 12px;
     font-size: 12px;
     color: #fff;
-    background-color:#82e08f;
 }
 
 section h1{
@@ -165,4 +163,60 @@ footer a:hover span{
 .arrow-color-left:hover, .arrow-color-right:hover{
     color:#82e08f;
     transition:0.5s;
+}
+
+/*************************************************************
+*********** ACCUEIL
+**************************************************************/
+
+.contenu-accueil{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+}
+
+.contenu-accueil img{
+    height:250px;
+    width:250px;
+    padding:75px;
+    animation:spin 60s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/*************************************************************
+*********** A-PROPOS
+**************************************************************/
+
+.contenu-a-propos{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+}
+
+.contenu-a-propos img{
+    height:250px;
+    width:250px;
+    padding:75px;
+    animation:spin 60s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
 }
