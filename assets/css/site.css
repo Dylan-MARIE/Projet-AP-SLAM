@@ -131,7 +131,7 @@ section:nth-child(7) h1{
 *********** FOOTER
 **************************************************************/
 
-footer{
+footer {
     position:fixed;
     width:100%;
     bottom:0px;
@@ -147,22 +147,23 @@ footer a{
     text-decoration:none;
     margin-right:10px;
     margin-left:-10px;
-    display: flex;
-    align-items: center;
+    display:flex;
+    align-items:center;
 }
 
-footer span{
+.arrow-color-left span, .arrow-color-right span{
     opacity:0;
+    transition: 0.5s;
 }
 
-.arrow-color-left:hover, .arrow-color-right:hover{
+.arrow-color-left:hover span, .arrow-color-right:hover span{
     opacity:1;
 }
 
 .arrow-color-left, .arrow-color-right{
     color:#FFFFFF;
     padding-left:15px;
-    padding-right:15px;   
+    padding-right:15px;
 }
 
 /*************************************************************
@@ -214,9 +215,9 @@ footer span{
     align-items:center;
 }
 
-.contenu-a-propos p {
-    font-size: 20px;
-    text-align: center;
+.contenu-a-propos p{
+    font-size:20px;
+    text-align:center;
 }
 
 @keyframes spin{
@@ -232,99 +233,110 @@ footer span{
 *********** COMPETENCES
 **************************************************************/
 
-.contenu-competences {
+.contenu-competences{
     font-size: 20px;
     height:96vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-/*DEBUT BARRES DE PROGRESSION*/
-
-.progress {
-    background-color: #dbdbdb;
-    height: 7.5px;
-    width:100px;
-    margin: 0px auto;
+td.titre, td.contenu{
+    text-align:center;
+    padding:20px;
+    min-width:200px;
+    min-height:100px;
 }
-
-.progress .barre {
-    height: 100%;
-}
-
-/*BARRES DE PROGRESSION DEVELOPPEMENT*/
-
-.progress .barre.html {
-    width: 80%;
-    background-color: #6f9457;
-}
-.progress .barre.css {
-    width: 80%;
-    background-color: #6f9457;
-}
-.progress .barre.javascript {
-    width: 60%;
-    background-color: #dda148;
-}
-.progress .barre.php{
-    width: 10%;
-    background-color: #9b443f;
-}
-.progress .barre.sql{
-    width: 10%;
-    background-color: #9b443f;
-}
-
-/*BARRES DE PROGRESSION RESEAU*/
-
-.progress .barre.adressage_ip{
-    width: 100%;
-    background-color: #4682b4;
-}
-.progress .barre.modèle_osi{
-    width: 80%;
-    background-color: #6f9457;
-}
-.progress .barre.modèle_tcp_ip{
-    width: 80%;
-    background-color: #6f9457;
-}
-.progress .barre.analyse_trames{
-    width: 70%;
-    background-color: #6f9457;
-}
-
-/*BARRES DE PROGRESSION LANGUES*/
-
-.progress .barre.français{
-    width: 100%;
-    background-color: #4682b4;
-}
-.progress .barre.anglais{
-    width: 65%;
-    background-color: #6f9457;
-}
-.progress .barre.espagnol{
-    width: 35%;
-    background-color: #dda148;
-}
-
-/*FIN BARRES DE PROGRESSION*/
 
 td.titre{
-    text-transform: uppercase;
-    background-color: #9b443f;
+    text-transform:uppercase;
+    background-color:#9b443f;
 }
 
-td{
-    text-align: center;
-    padding:20px;
-    background-color: #353535;
-    min-width: 200px;
-    min-height: 100px;
+td.contenu{
+    background-color:#353535;
 }
 
 td div{
     margin-top:10px;
 }
+
+table{
+    border-spacing:50px 5px;
+}
+
+/**********DEBUT BARRES DE PROGRESSION**********/
+
+.progress{
+    background-color:#dbdbdb;
+    height:7.5px;
+    width:100px;
+    margin:0px auto;
+}
+
+.progress .barre{
+    height:100%;
+}
+
+/*BARRES DE PROGRESSION DEVELOPPEMENT*/
+
+.progress .barre.html{
+    width:80%;
+    background-color:#6f9457;
+}
+.progress .barre.css{
+    width:80%;
+    background-color:#6f9457;
+}
+.progress .barre.javascript{
+    width:60%;
+    background-color:#dda148;
+}
+.progress .barre.php{
+    width:10%;
+    background-color:#9b443f;
+}
+.progress .barre.sql{
+    width:10%;
+    background-color:#9b443f;
+}
+
+/*BARRES DE PROGRESSION RESEAU*/
+
+.progress .barre.adressage_ip{
+    width:100%;
+    background-color:#4682b4;
+}
+.progress .barre.modèle_osi{
+    width:80%;
+    background-color:#6f9457;
+}
+.progress .barre.modèle_tcp_ip{
+    width:80%;
+    background-color:#6f9457;
+}
+.progress .barre.analyse_trames{
+    width:70%;
+    background-color:#6f9457;
+}
+
+/*BARRES DE PROGRESSION LANGUES*/
+
+.progress .barre.français{
+    width:100%;
+    background-color:#4682b4;
+}
+.progress .barre.anglais{
+    width:65%;
+    background-color:#6f9457;
+}
+.progress .barre.espagnol{
+    width:35%;
+    background-color:#dda148;
+}
+
+/**********FIN BARRES DE PROGRESSION**********/
+
+/*************************************************************
+*********** EXPERIENCE
+**************************************************************/
