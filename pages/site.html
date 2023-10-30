@@ -20,35 +20,41 @@
                     <li><a href="#experience">expérience</a></li>
                     <li><a href="#formation">formation</a></li>
                     <li><a href="#contact">contact</a></li>
+                    <li><a href="https://www.linkedin.com/in/dylan-marie-1a7386274/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
                 </ul>
             </li>
         </ul> 
     </nav>
-    
+
     <section id="accueil">
         <h1>Accueil</h1>
         <div class="contenu-accueil">
-            <img src="./../assets/images/illustration.png">
+            <div class="position-image">
+                <img src="./../assets/images/illustration.png" alt="">
+            </div>
             <p>Bienvenue sur le site Web de Dylan MARIE</p>
         </div>
         <footer>
-            <a class="arrow-color-left-vers-contact" href="#contact">
-                <span class="arrow-color-left-vers-contact">Page précédente</span>
+            <a class="arrow-color-left" href="#contact">
+                <span class="arrow-color-left">Page précédente</span>
                 <i class="fa-solid fa-arrow-left-long"></i>
             </a>
-            <a class="arrow-color-right-vers-a-propos" href="#a-propos">
+            <a class="arrow-color-right" href="#a-propos">
                 <i class="fa-solid fa-arrow-right-long"></i>
-                <span class="arrow-color-right-vers-a-propos">Page suivante</span></a>
+                <span class="arrow-color-right">Page suivante</span></a>
         </footer>
     </section>
  
     <section id="a-propos">
         <h1>à propos</h1>
         <div class="contenu-a-propos">
-            <img src="./../assets/images/illustration.png">
-            <p>Ce site, créé par mes soins, vous apportera une preuve concrète de mes compétences</p>
-            <p>Vous y trouverez des informations concrètes me concernant</p>
-        </div><p>Une accroche + Un paragraphe de présentation + Photo d'illustration</p>
+            <div class="position-image">
+                <img src="./../assets/images/illustration.png" alt="">
+            </div>
+            <p>Ce site Web, créé par mes soins, vous apportera une preuve concrète de mes compétences.</p><br>
+            <p>Je suis étudiant en première année de BTS Services Informatiques aux Organisations au sein de l'institut CaenSup Sainte-Ursule.<br>
+                Je réalise ce site Web dans le cadre d'un projet en atelier de professionnalisation axé Solutions Logicielles et Applications Métiers.</p>
+        </div>
         <footer>
             <a class="arrow-color-left" href="#accueil">
                 <span class="arrow-color-right">Page précédente</span>
@@ -63,7 +69,42 @@
  
     <section id="competences">
         <h1>Compétences</h1>
-        <p>Domaines(développement + réseau + langues) + Items pour chaque domaine (html, css, php, sql) / Pour chaque item : niveau sous la forme d'une barre ou d'étoiles + score aux certificats (voltaire, tosa, cisco, microsoft)</p>
+        <div class="contenu-competences">
+            <table>
+                <tr>
+                    <td class="titre">Développement</td>
+                    <td class="titre">Réseau</td>
+                    <td class="titre">Langues</td>
+                </tr>
+                <tr>
+                    <td>HTML<div class="progress"><div class="barre html"></div></div></td>
+                    <td>Adressage IP<div class="progress"><div class="barre adressage_ip"></div></div></td>
+                    <td>Français<div class="progress"><div class="barre français"></div></div></td>
+                </tr>
+                <tr>
+                    <td>CSS<div class="progress"><div class="barre css"></div></div></td>
+                    <td>Modèle OSI<div class="progress"><div class="barre modèle_osi"></div></div></td>
+                    <td>Anglais<div class="progress"><div class="barre anglais"></div></div></td>
+                </tr>
+                <tr>
+                    <td>JavaScript<div class="progress"><div class="barre javascript"></div></div></td>
+                    <td>Modèle TCP/IP<div class="progress"><div class="barre modèle_tcp_ip"></div></div></td>
+                    <td>Espagnol<div class="progress"><div class="barre espagnol"></div></div></td>
+                </tr>
+                <tr>
+                    <td>PHP<div class="progress"><div class="barre php"></div></div></td>
+                    <td>Analyse de trames<div class="progress"><div class="barre analyse_trames"></div></div></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>SQL<div class="progress"><div class="barre sql"></div></div></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            
+        </div>
+<!--score aux certificats (voltaire, tosa, cisco, microsoft)-->
         <footer>
             <a class="arrow-color-left" href="#a-propos">
                 <span class="arrow-color-right">Page précédente</span>
