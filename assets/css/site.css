@@ -76,6 +76,9 @@ nav .sous li:nth-child(7) a:hover{
     background-color:#FFFFFF;
     color:#0a66c2;
 }
+nav .sous li:nth-child(8) a:hover{
+    background-color:#353535;
+}
 
 /*************************************************************
 *********** SECTION
