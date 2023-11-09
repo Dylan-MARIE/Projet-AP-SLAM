@@ -85,7 +85,13 @@ nav .sous li:nth-child(8) a:hover{
 **************************************************************/
 
 section{
-    display:none;   
+    display:none;
+    position:fixed;
+    top:50px;
+    bottom:50px;
+    left:0px;
+    right:0px;
+    overflow:auto;  
 }
 
 section:target{
@@ -237,11 +243,12 @@ footer a{
 **************************************************************/
 
 .contenu-competences{
-    font-size: 20px;
-    height:96vh;
+    font-size:20px;
+    padding-top:50px;
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
 }
 
 td.titre, td.contenu{
@@ -296,7 +303,7 @@ table{
     background-color:#dda148;
 }
 .progress .barre.php{
-    width:10%;
+    width:20%;
     background-color:#9b443f;
 }
 .progress .barre.sql{
@@ -344,25 +351,17 @@ table{
 *********** EXPERIENCE
 **************************************************************/
 
-.contenu-experience ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90vh;
-    flex-direction: column;
-    border: 1px solid #4682b4;
-
+.contenu-experience ul{
+    list-style-type:none;
+    display:flex;
+    flex-direction:column;
+    border:1px solid #4682b4;
+    align-self:center;
 }
 
-.contenu-experience li, .contenu-experience li:nth-child(3) {
-    margin: 20px;
-    border: 1px solid #4682b4;
-    padding: 20px;
-    align-self: center;
-
-}
-
-.contenu-experience li:nth-child(2), .contenu-experience li:nth-child(4){
-    align-self: flex-end;
+.contenu-experience li, .contenu-experience li:nth-child(3){
+    margin:20px;
+    border:1px solid #4682b4;
+    padding:20px;
+    align-self:center;
 }
