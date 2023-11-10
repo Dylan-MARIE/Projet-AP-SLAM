@@ -359,9 +359,147 @@ table{
     align-self:center;
 }
 
-.contenu-experience li, .contenu-experience li:nth-child(3){
+.contenu-experience li{
     margin:20px;
-    border:1px solid #4682b4;
+    border:1px solid #FFFFFF;
     padding:20px;
     align-self:center;
+    background-color:#4682b4;
 }
+
+.contenu-experience li:hover{
+background-color:#6f9457;
+transition:1s;
+}
+
+/*ATTENTION*/
+    
+    .flex-row {
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 1em;
+    
+    }
+    
+    .flex-column{
+      box-sizing: border-box;
+      display: flex;
+      flex-direction:column;
+      margin-bottom: 1em;
+    }
+    
+    
+    .flex-col-md-6{
+      box-sizing: border-box;
+      padding: 1em;
+      width: 100%;
+    }
+    .flex-col-xs-12{
+      box-sizing: border-box;
+      padding: 1em;
+      width: 100%;
+    }
+    @media (min-width: 992px) {
+      .flex-col-md-6 {
+        max-width: calc(100% * (6 / 12));
+        width: calc(100% * (6 / 12));
+      }
+    }
+    
+    
+    /*accordion*/
+        
+    .content {
+        box-sizing: border-box;
+        font-size: 0.9em;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height, .5s;
+        position:relative;
+    }
+    
+    
+    label .accordion-heading {
+        width: 100%;
+        line-height: 45px;
+        margin-left: 10px;
+        font-size: 1.2em;
+    }
+    .cross-box{
+        height: 30px;
+        width: 25px;
+        background-color: #0098db;
+        margin-top: 9px;
+    }
+    .cross{
+        margin-right:15px;
+        margin-top:3px;
+    }
+    .panel{
+    box-shadow: 5px 3px 12px 5px rgba(0,0,0,0.1);
+        margin-bottom: 33px;
+        box-sizing: border-box;
+        padding: 30px;
+      background-color: aliceblue;
+    }
+    label{
+        display: flex;
+        width: 100%;
+        cursor: pointer;
+        user-select: none;
+        color: #8a8a8a;
+        margin: 0;
+        }
+    /********************/
+    /* pseudos elements */
+    /**********************/
+    
+    
+    
+    .content:before {
+        content: '';
+        border-top: 2px solid #ffffff;
+        width: 90%;
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        transition: 0.3s;
+        margin-left: 6px;
+    
+        }
+    
+    .cross:before,.cross:after {
+         content: '';
+        border-top: 2px solid #ffffff;
+        width: 12px;
+        display: block;
+        margin-top: 15px;
+        transition: 0.3s;
+        margin-left: 5px;
+    }
+    
+    .cross:after {
+        transform: rotate(90deg);
+        margin-top: -2px;
+    }   
+        
+        
+    /********************/
+    /* check states */
+    /**********************/
+        
+    label:hover ~ .content {
+        max-height: 400px;
+        transition: max-height, 1s;
+    }
+    label:hover   .cross-box{
+        background-color:#93c04d;
+    }
+    label:hover  .cross:before {
+        transform: rotate(180deg);
+    }
+    
+    label:hover  .cross:after {
+        transform: rotate(0deg);
+    }
