@@ -370,6 +370,7 @@ table{
 .contenu-experience li:hover{
 background-color:#6f9457;
 transition:1s;
+font-size:50px;
 }
 
 /*ATTENTION*/
