@@ -251,32 +251,31 @@ footer a{
     flex-wrap:wrap;
 }
 
-td.titre, td.contenu{
+.contenu-competences .titre, .contenu-competences .contenu{
     text-align:center;
     padding:20px;
     min-width:200px;
     min-height:100px;
 }
 
-td.titre{
+.contenu-competences .titre{
     text-transform:uppercase;
     background-color:#9b443f;
 }
 
-td.contenu{
+.contenu-competences .contenu{
     background-color:#353535;
 }
 
-td div{
+.contenu-competences td div{
     margin-top:10px;
 }
 
-table{
+.contenu-competences table{
     border-spacing:50px 5px;
 }
 
 /**********DEBUT BARRES DE PROGRESSION**********/
-
 .progress{
     background-color:#dbdbdb;
     height:7.5px;
@@ -287,8 +286,6 @@ table{
 .progress .barre{
     height:100%;
 }
-
-/*BARRES DE PROGRESSION DEVELOPPEMENT*/
 
 .progress .barre.html{
     width:80%;
@@ -311,8 +308,6 @@ table{
     background-color:#9b443f;
 }
 
-/*BARRES DE PROGRESSION RESEAU*/
-
 .progress .barre.adressage_ip{
     width:100%;
     background-color:#4682b4;
@@ -330,8 +325,6 @@ table{
     background-color:#6f9457;
 }
 
-/*BARRES DE PROGRESSION LANGUES*/
-
 .progress .barre.français{
     width:100%;
     background-color:#4682b4;
@@ -344,25 +337,27 @@ table{
     width:35%;
     background-color:#dda148;
 }
-
 /**********FIN BARRES DE PROGRESSION**********/
 
 /*************************************************************
 *********** EXPERIENCE
 **************************************************************/
 
-.contenu-experience ul{
-    list-style-type:none;
+.contenu-experience{
+    font-size:20px;
+    padding-top:50px;
     display:flex;
-    flex-direction:column;
-    border:1px solid #4682b4;
-    align-self:center;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
 }
 
-.contenu-experience li{
-    margin:20px;
-    border:1px solid #FFFFFF;
+
+.contenu-experience .titre, .contenu-experience .contenu{
+    text-align:center;
     padding:20px;
-    align-self:center;
-    background-color:#4682b4;
+    min-width:200px;
+    min-height:100px;
+    max-width:300px;
+    border:1px solid #4682b4;
 }
