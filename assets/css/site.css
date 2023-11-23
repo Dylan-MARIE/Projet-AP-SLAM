@@ -107,7 +107,6 @@ section h1{
     right:0px;
     left:0px;
     height:50px;
-    width:100%;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -254,7 +253,7 @@ footer a{
 .contenu-competences .titre, .contenu-competences .contenu{
     text-align:center;
     padding:20px;
-    min-width:200px;
+    width:300px;
     min-height:100px;
 }
 
@@ -351,23 +350,24 @@ footer a{
     flex-wrap:wrap;
 }
 
-.contenu-experience .titre, .contenu-experience .contenu{
+.contenu-experience .titre, .contenu-experience .contenu, .contenu-experience .contenu-couleur{
+   
     text-align:center;
     padding:20px;
-    min-width:100px;
+    width:300px;
     min-height:100px;
-    max-width:300px;
+    
 }
 
 .contenu-experience .titre{
     background-color:#4682b4;
     text-transform: uppercase;
-    font-size:20px;
+    font-size:17px;
 }
 
-.contenu-experience .contenu{
+.contenu-experience .contenu, .contenu-experience .contenu-couleur{
     background-color:#353535;
-    font-size:18px;
+    font-size:16px;
 }
 
 .contenu-experience table{
@@ -376,4 +376,81 @@ footer a{
 
 .contenu-experience ul{
     padding-left: 10px;
+}
+
+.contenu-experience .contenu-couleur{
+    color:#4682b4;
+    background-color: #FFFFFF;
+    font-weight: bold;
+}
+
+/*************************************************************
+*********** FORMATION
+**************************************************************/
+
+
+.contenu-formation{
+    padding-top:50px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
+}
+
+.contenu-formation .titre, .contenu-formation .contenu, .contenu-formation .contenu-couleur{
+    text-align:center;
+    padding:20px;
+    min-height:100px;
+    width:300px;
+}
+
+.contenu-formation .titre{
+    background-color:#84476c;
+    text-transform: uppercase;
+    font-size:17px;
+}
+
+.contenu-formation .contenu, .contenu-formation .contenu-couleur{
+    background-color:#353535;
+    font-size:16px;
+}
+
+.contenu-formation table{
+    border-spacing:20px 5px;
+}
+
+.contenu-formation ul{
+    padding-left: 10px;
+}
+
+.contenu-formation .contenu-couleur{
+    color:#84476c;
+    background-color: #FFFFFF;
+    font-weight: bold;
+}
+
+/****FIN***/
+
+@media (max-width: 550px){
+    section h1{
+        left:100px;
+        right:0px;
+    }
+    nav{
+        width:100px;
+    }
+    nav .sous{
+        width:100vw;
+    }
+    footer span{
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 1550px){
+    .contenu-experience .titre, .contenu-experience .contenu{
+        padding:20px;
+        width:400px;
+        min-height:100px;
+    }
 }
