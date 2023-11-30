@@ -242,7 +242,7 @@ footer a{
 **************************************************************/
 
 .contenu-competences{
-    font-size:20px;
+    font-size:17px;
     padding-top:50px;
     display:flex;
     justify-content:center;
@@ -354,9 +354,8 @@ footer a{
    
     text-align:center;
     padding:20px;
-    width:300px;
+    width:800px;
     min-height:100px;
-    
 }
 
 .contenu-experience .titre{
@@ -379,9 +378,7 @@ footer a{
 }
 
 .contenu-experience .contenu-couleur{
-    color:#4682b4;
-    background-color: #FFFFFF;
-    font-weight: bold;
+    background-color: #535353;
 }
 
 /*************************************************************
@@ -401,7 +398,7 @@ footer a{
     text-align:center;
     padding:20px;
     min-height:100px;
-    width:300px;
+    width:800px;
 }
 
 .contenu-formation .titre{
@@ -425,9 +422,12 @@ footer a{
 
 .contenu-formation .contenu-couleur{
     background-color: #535353;
+    
 }
 
-/****FIN***/
+/*************************************************************
+*********** RESPONSIVE DESIGN
+**************************************************************/
 
 @media (max-width: 550px){
     section h1{
@@ -452,3 +452,23 @@ footer a{
         min-height:100px;
     }
 }
+
+/**************REPLACER // CV**************/
+
+.CV{
+    text-decoration:none;
+    color:#FFFFFF;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 2px solid #84476c;
+    padding: 0px 5px 2.5px 5px;
+    margin:250px;
+}
+
+/**************ACCORDEON**************/
+
+summary{
+    cursor:pointer;
+}
+
+/*https://www.alsacreations.com/article/lire/1335-html5-details-summary.html*/
