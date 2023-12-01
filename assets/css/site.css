@@ -242,7 +242,7 @@ footer a{
 **************************************************************/
 
 .contenu-competences{
-    font-size:16px;
+    font-size:17px;
     padding-top:50px;
     display:flex;
     justify-content:center;
@@ -254,34 +254,22 @@ footer a{
     text-align:center;
     padding:20px;
     width:1000px;
-    min-height:100px;
+    height:40px;
+    margin-bottom:10px;
+    margin-top:10px;
 }
 
 .contenu-competences .titre{
     text-transform:uppercase;
     background-color:#9b443f;
-}
-
-.contenu-competences .plus, .contenu-competences .moins{
-    background-color:#535353;
-    text-transform: uppercase;
-    font-size:40px;
-    width:65px;
-    text-align: center;
-    vertical-align: top;
-    min-height:62.5px;
+    margin-bottom:10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenu-competences .contenu{
     background-color:#353535;
-}
-
-.contenu-competences td div{
-    margin-top:10px;
-}
-
-.contenu-competences table{
-    border-spacing:50px 5px;
 }
 
 /**********DEBUT BARRES DE PROGRESSION**********/
@@ -290,12 +278,12 @@ footer a{
     height:7.5px;
     width:100px;
     margin:0px auto;
+    margin-top:5px;
+    
 }
-
 .progress .barre{
     height:100%;
 }
-
 .progress .barre.html{
     width:80%;
     background-color:#6f9457;
@@ -316,7 +304,6 @@ footer a{
     width:10%;
     background-color:#9b443f;
 }
-
 .progress .barre.adressage_ip{
     width:100%;
     background-color:#4682b4;
@@ -333,7 +320,6 @@ footer a{
     width:70%;
     background-color:#6f9457;
 }
-
 .progress .barre.français{
     width:100%;
     background-color:#4682b4;
@@ -386,27 +372,13 @@ footer a{
     font-size:16px;
 }
 
-.contenu-experience .plus, .contenu-experience .moins{
-    background-color:#535353;
-    text-transform: uppercase;
-    font-size:40px;
-    width:65px;
-    text-align: center;
-    vertical-align: top;
-    min-height:62.5px;
-}
-
 .contenu-experience .contenu, .contenu-experience .contenu-couleur{
     background-color:#353535;
     font-size:16px;
 }
 
-.contenu-experience table{
-    border-spacing:20px 5px;
-}
-
 .contenu-experience ul{
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .contenu-experience .contenu-couleur{
@@ -439,26 +411,6 @@ footer a{
     padding: 0px 5px 2.5px 5px;
 }
 
-.contenu-formation .cv{
-    text-decoration:none;
-    color:#FFFFFF;
-    font-size: 16px;
-    text-transform: uppercase;
-    border: 2px solid #84476c;
-    padding: 0px 5px 2.5px 5px;
-    margin:400px;
-}
-
-.contenu-formation .plus, .contenu-formation .moins{
-    background-color:#535353;
-    text-transform: uppercase;
-    font-size:40px;
-    width:65px;
-    text-align: center;
-    vertical-align: top;
-    min-height:62.5px;
-}
-
 .contenu-formation .titre, .contenu-formation .contenu, .contenu-formation .contenu-couleur{
     padding:20px;
     min-height:100px;
@@ -476,12 +428,8 @@ footer a{
     font-size:16px;
 }
 
-.contenu-formation table{
-    border-spacing:20px 5px;
-}
-
 .contenu-formation ul{
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .contenu-formation .contenu-couleur{
@@ -519,21 +467,20 @@ footer a{
 
 /**************ACCORDEON**************/
 
-details > summary{
-    list-style-type: '';
-    font-size:16px;
-    list-style-position:inside;
+summary{
+    list-style-type: none;
     cursor:pointer;
 }
 
-details > summary .moins{
-    display:none;
+details summary::before {
+    content: "+";
+    display: inline-block;
+    font-size:25px;
+    transition: transform 0.5s;
+    padding: 0px 10px 6px 10px;
 }
 
-details[open] > summary .plus {
-    display:none;
-}
-
-details[open] > summary .moins {
-    display:block;
+details[open] summary::before {
+    transform: rotate(360deg);
+    content: "-";
 }
