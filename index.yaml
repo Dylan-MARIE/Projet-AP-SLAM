@@ -1,0 +1,13 @@
+menu:
+  accueil: accueil
+  a-propos: à propos
+  competences: compétences
+  experience: expérience
+  formation: formation
+  contact: contact
+
+accueil:
+  accroche: Bienvenue sur le site de
+  prenom: Dylan
+  nom: MARIE
+  photo: illustration.png
