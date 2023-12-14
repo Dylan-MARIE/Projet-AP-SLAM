@@ -1,6 +1,6 @@
 <?php
 
-    include("../lib/yaml/yaml.php"); // Bibiothèqye yaml
+    //include("../lib/yaml/yaml.php"); // Bibiothèque yaml
     $data=yaml_parse_file('../index.yaml');
     //print_array($data);
 
