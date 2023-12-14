@@ -31,7 +31,7 @@ competences:
       - nom: PHP
         niveau: 20
       - nom: SQL
-        niveau: 5
+        niveau: 30
   
   - domaine: Réseau
     contenu:
