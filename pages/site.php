@@ -1,6 +1,6 @@
 <?php
 
-    include("../lib/yaml/yaml.php");
+    include("../lib/yaml/yaml.php"); // Bibiothèqye yaml
     $data=yaml_parse_file('../index.yaml');
     //print_array($data);
 
@@ -33,7 +33,7 @@
             </li>
         </ul> 
     </nav>
-    
+
 <!--SECTION ACCUEIL-->
     <section id="accueil">
         <h1>Accueil</h1>
@@ -61,12 +61,15 @@
     <section id="a-propos">
         <h1>à propos</h1>
         <div class="contenu-a-propos">
-            <div class="position-image">
-                <img src="./../assets/images/illustration.png" alt="">
-            </div>
-            <p>Ce site Web, créé par mes soins, vous apportera une preuve concrète de mes compétences.</p><br>
-            <p>Je suis étudiant en première année de BTS Services Informatiques aux Organisations au sein de l'institut CaenSup Sainte-Ursule.</p>
-            <p>Je réalise ce site Web dans le cadre d'un projet en atelier de professionnalisation axé Solutions Logicielles et Applications Métiers.</p>
+        <?php
+            echo '<div class="position-image">';
+                echo '<img src="./../assets/images/'.$data["accueil"]["photo"].'" alt="">';
+            echo '</div>';
+            echo '<p>'.$data["a-propos"]["accroche"].'</p>';
+            foreach($data["a-propos"]["paragraphes"] AS $para) {
+                echo '<p>'.$para.'</p>';
+            }
+            ?>
         </div>
         <footer>
             <a class="arrow-color-left" href="#accueil">
@@ -85,29 +88,17 @@
     <section id="competences">
         <h1>Compétences</h1>
         <div class="contenu-competences">
-            <details>
-                <summary class="titre">Développement</summary>
-                <div class="contenu">HTML<div class="progress"><div class="barre html"></div></div></div>
-                <div class="contenu">CSS<div class="progress"><div class="barre css"></div></div></div>
-                <div class="contenu">JavaScript<div class="progress"><div class="barre javascript"></div></div></div>
-                <div class="contenu">PHP<div class="progress"><div class="barre php"></div></div></div>
-                <div class="contenu">SQL<div class="progress"><div class="barre sql"></div></div></div>
-            </details>    
+           <?php 
+            foreach ($data['competences'] as $competence) {
+                echo '<details>';
+                echo "<summary class='titre'>{$competence['domaine']}</summary>";
 
-            <details>
-                <summary class="titre">Réseau</summary>
-                <div class="contenu">Adressage IP<div class="progress"><div class="barre adressage_ip"></div></div></div>
-                <div class="contenu">Modèle OSI<div class="progress"><div class="barre modèle_osi"></div></div></div>
-                <div class="contenu">Packet Tracer<div class="progress"><div class="barre packet_tracer"></div></div></div>
-                <div class="contenu">Analyse de trames<div class="progress"><div class="barre analyse_trames"></div></div></div>
-            </details> 
-
-            <details>
-                <summary class="titre">Langues</summary>
-                <div class="contenu">Français<div class="progress"><div class="barre français"></div></div></div>
-                <div class="contenu">Anglais<div class="progress"><div class="barre anglais"></div></div></div>
-                <div class="contenu">Espagnol<div class="progress"><div class="barre espagnol"></div></div> </div>
-            </details>
+                foreach ($competence['contenu'] as $item) {
+                    echo "<div class='contenu'>".$item["nom"]."<div class='progress'><div style='width:".$item["niveau"]."%;' class='barre".(ceil($item["niveau"]/10)*10)."'></div></div></div>";
+                }
+                echo '</details>';
+            }
+            ?>
         </div>
         <footer>
             <a class="arrow-color-left" href="#a-propos">

@@ -168,6 +168,10 @@ footer a{
     font-size:20px;
 }
 
+.contenu-a-propos p:nth-child(2){
+    padding-bottom:20px;
+}
+
 @keyframes spin{
     0%{
         transform:rotate(0deg);
@@ -191,19 +195,12 @@ footer a{
     margin-top:5px;
 }
 
-.progress .barre{height:100%;}
-.progress .barre.html{width:80%; background-color:#6f9457;}
-.progress .barre.css{width:80%; background-color:#6f9457;}
-.progress .barre.javascript{width:40%; background-color:#dda148;}
-.progress .barre.php{width:20%; background-color:#9b443f;}
-.progress .barre.sql{width:5%; background-color:#9b443f;}
-.progress .barre.adressage_ip{width:100%; background-color:#4682b4;}
-.progress .barre.modèle_osi{width:80%; background-color:#6f9457;}
-.progress .barre.packet_tracer{width:70%; background-color:#6f9457;}
-.progress .barre.analyse_trames{width:60%; background-color:#dda148;}
-.progress .barre.français{width:100%; background-color:#4682b4;}
-.progress .barre.anglais{width:66%; background-color:#6f9457;}
-.progress .barre.espagnol{width:20%; background-color:#9b443f;}
+.progress div{height:100%;}
+
+.progress .barre10, .progress .barre20, .progress .barre30{background-color: #9b443f;}
+.progress .barre40, .progress .barre50, .progress .barre60{background-color: #dda148;}
+.progress .barre70, .progress .barre80, .progress .barre90{background-color: #6f9457;}
+.progress .barre100{background-color: #4682b4;}
 
 /**********FIN BARRES DE PROGRESSION**********/
 
