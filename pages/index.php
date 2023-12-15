@@ -1,9 +1,6 @@
 <?php
-
-    include("../lib/yaml/yaml.php"); // Bibiothèque yaml
-    $data=yaml_parse_file('../index.yaml');
-    //print_array($data);
-
+    include("../lib/yaml/yaml.php");
+    $data=yaml_parse_file('../config/index.yaml');
 ?>
 
 <!doctype html>
@@ -69,7 +66,7 @@
             foreach($data["a-propos"]["paragraphes"] AS $para) {
                 echo '<p>'.$para.'</p>';
             }
-            ?>
+        ?>
         </div>
         <footer>
             <a class="arrow-color-left" href="#accueil">
@@ -89,15 +86,15 @@
         <h1>Compétences</h1>
         <div class="contenu-competences">
            <?php 
-            foreach ($data['competences'] as $competence) {
-                echo '<details>';
-                echo "<summary class='titre'>{$competence['domaine']}</summary>";
+                foreach ($data['competences'] as $competence) {
+                    echo '<details>';
+                    echo "<summary class='titre'>{$competence['domaine']}</summary>";
 
-                foreach ($competence['contenu'] as $item) {
-                    echo "<div class='contenu'>".$item["nom"]."<div class='progress'><div style='width:".$item["niveau"]."%;' class='barre".(ceil($item["niveau"]/10)*10)."'></div></div></div>";
+                    foreach ($competence['contenu'] as $item) {
+                        echo "<div class='contenu'>".$item["nom"]."<div class='progress'><div style='width:".$item["niveau"]."%;' class='barre".(ceil($item["niveau"]/10)*10)."'></div></div></div>";
+                    }
+                    echo '</details>';
                 }
-                echo '</details>';
-            }
             ?>
         </div>
         <footer>

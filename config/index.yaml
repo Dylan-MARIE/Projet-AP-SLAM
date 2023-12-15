@@ -29,9 +29,9 @@ competences:
       - nom: JavaScript
         niveau: 40
       - nom: PHP
-        niveau: 20
-      - nom: SQL
         niveau: 30
+      - nom: SQL
+        niveau: 20
   
   - domaine: Réseau
     contenu:
