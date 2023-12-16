@@ -1,0 +1,33 @@
+competences:
+  - domaine: Développement
+    contenu:
+      - nom: HTML
+        niveau: 80
+      - nom: CSS
+        niveau: 80
+      - nom: JavaScript
+        niveau: 40
+      - nom: PHP
+        niveau: 30
+      - nom: SQL
+        niveau: 20
+  
+  - domaine: Réseau
+    contenu:
+      - nom: Adressage IP
+        niveau: 100
+      - nom: Modèle OSI
+        niveau: 80
+      - nom: Packet Tracer
+        niveau: 70
+      - nom: Analyse de trames
+        niveau: 60
+  
+  - domaine: Langues
+    contenu:
+      - nom: Français
+        niveau: 100
+      - nom: Anglais
+        niveau: 60
+      - nom: Espagnol
+        niveau: 20

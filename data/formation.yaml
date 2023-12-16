@@ -1,0 +1,33 @@
+formation:
+  - domaine: BTS SIO | Parcours SISR
+    contenu:
+      - lieu: CaenSup Sainte-Ursule | Caen | 2023-2025
+        description: 
+          - Installation, intégration, administration, sécurisation des équipements et des services informatiques
+          - Exploitation, supervision, maintenance d’une infrastructure systèmes et réseaux
+          - Choix et mise en œuvre de solutions d’hébergement
+          - Définition et configuration des postes clients, des serveurs et des équipements d’interconnexion, leur déploiement et leur maintenance
+
+  - domaine: Prévention et secours civiques de niveau 1
+    contenu:
+      - lieu: Armée de l'Air | BA 721 Rochefort | 2022
+        description: 
+          - Formation aux premiers soins et à l'assistance aux personnes en danger
+          - Sauvetage au combat
+
+  - domaine: Certificat d'aptitude militaire
+    contenu:
+      - lieu: Armée de l'Air | BA 721 Rochefort | 2022
+        description: 
+          - → Formation militaire initiale ←
+          - Tir militaire
+          - Stage de nomadisation
+          - Technique d'Intervention Opérationnelle Rapprochée
+
+  - domaine: Baccalauréat scientifique option SVT
+    contenu:
+      - lieu: Institut Saint Jean-Eudes | Vire Normandie | 2017
+        description: 
+          - Apprentissage approfondi des mathématiques
+          - Apprentissage approfondi de la physique et de la chimie
+          - Apprentissage approfondi des sciences de la Vie et de la Terre

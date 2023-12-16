@@ -1,0 +1,13 @@
+menu:
+  accueil: accueil
+  a-propos: à propos
+  competences: compétences
+  experience: expérience
+  formation: formation
+  contact: contact
+  linkedin: 
+    url: https://www.linkedin.com/in/dylan-marie-1a7386274
+    icone: fa-linkedin
+  github:
+    url: https://www.github.com/Dylan-MARIE
+    icone: fa-github
