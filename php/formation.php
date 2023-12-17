@@ -1,22 +1,26 @@
+<?php
+    $data=yaml_parse_file('data/formation.yaml');
+?>
+
 <section id="formation">
-    <h1>Formation</h1>
-    <a href="./../assets/images/cv.pdf" class="cv" target="_blank"><img src="./../assets/images/cv.png" alt="Curriculum Vitæ"></a>        
-    <div class="contenu-formation"> 
-    <?php $data=yaml_parse_file('../data/formation.yaml');
-        foreach ($data['formation'] as $formation) {
-            echo "<details>";
-            echo "<summary class='titre'>{$formation['domaine']}</summary>";
+    <h1><?= $data['titre'] ?></h1>
+    <?php echo '<a href="assets/images/'.$data['cv']['pdf'].'" class="cv" target="_blank"><img src="assets/images/'.$data['cv']['image'].'" alt="Curriculum Vitæ"></a>' ?>
+    <div class="contenu-formation">
+        <?php
+        foreach ($data['formation'] as $formation){
+            echo '<details>';
+            echo '<summary class="titre">'.$formation['domaine'].'</summary>';
 
             foreach ($formation['contenu'] as $contenu) {
-                echo "<div class='contenu-couleur'>".$contenu['lieu']."</div>";
+                echo '<div class="contenu-couleur">'.$contenu['lieu'].'</div>';
 
                 foreach ($contenu['description'] as $description){
-                    echo "<div class='contenu'><ul><li>$description</li></ul></div>";
+                    echo '<div class="contenu"><ul><li>'.$description.'</li></ul></div>';
                 }
             }
-            echo "</details>";
+            echo '</details>';
         }
-    ?>
+        ?>
     </div>
     <footer>
         <a class="arrow-color-left" href="#experience">

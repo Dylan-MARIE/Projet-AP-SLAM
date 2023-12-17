@@ -1,3 +1,9 @@
+titre: expérience
+
+cv:
+  image: cv.png
+  pdf: cv.pdf
+
 experience:
   - domaine: Manutentionnaire
     contenu:

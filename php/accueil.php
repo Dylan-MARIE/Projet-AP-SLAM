@@ -1,11 +1,15 @@
+<?php
+    $data=yaml_parse_file('data/accueil.yaml');
+?>
+
 <section id="accueil">
-    <h1>Accueil</h1>
+    <h1><?= $data['titre'] ?></h1>
     <div class="contenu-accueil">
-        <?php $data=yaml_parse_file('../data/accueil.yaml');
+        <?php
         echo '<div class="position-image">';
-            echo '<img src="assets/images/'.$data["accueil"]["photo"].'" alt="">';
+            echo '<img src="assets/images/'.$data['accueil']['photo'].'" alt="logo">';
         echo '</div>';
-        echo '<p>'.$data["accueil"]["accroche"].' '.$data["accueil"]["prenom"].' '.$data["accueil"]["nom"].'</p>';
+        echo '<p>'.$data['accueil']['accroche'].' '.$data['accueil']['prenom'].' '.$data['accueil']['nom'].'</p>';
         ?>
     </div>
     <footer>

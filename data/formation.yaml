@@ -1,3 +1,9 @@
+titre: formation
+
+cv:
+  image: cv.png
+  pdf: cv.pdf
+
 formation:
   - domaine: BTS SIO | Parcours SISR
     contenu:

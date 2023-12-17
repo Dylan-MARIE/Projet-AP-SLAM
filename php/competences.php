@@ -1,16 +1,20 @@
-<section id="competences">
-    <h1>Compétences</h1>
-    <div class="contenu-competences">
-        <?php $data=yaml_parse_file('../data/competences.yaml');
-            foreach ($data['competences'] as $competence) {
-                echo "<details>";
-                echo "<summary class='titre'>{$competence['domaine']}</summary>";
+<?php
+    $data=yaml_parse_file('data/competences.yaml');
+?>
 
-                foreach ($competence['contenu'] as $item) {
-                    echo "<div class='contenu'>".$item["nom"]."<div class='progress'><div style='width:".$item["niveau"]."%;' class='barre".(ceil($item["niveau"]/10)*10)."'></div></div></div>";
-                }
-                echo '</details>';
+<section id="competences">
+    <h1><?= $data['titre'] ?></h1>
+    <div class="contenu-competences">
+        <?php
+        foreach ($data['competences'] as $competence){
+            echo '<details>';
+            echo '<summary class="titre">'.$competence['domaine'].'</summary>';
+
+            foreach ($competence['contenu'] as $item){
+                echo "<div class='contenu'>".$item["nom"]."<div class='progress'><div style='width:".$item["niveau"]."%;' class='barre".(ceil($item["niveau"]/10)*10)."'></div></div></div>";
             }
+            echo '</details>';
+        }
         ?>
     </div>
     <footer>

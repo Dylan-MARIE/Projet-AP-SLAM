@@ -42,7 +42,7 @@
     <?php include ("php/formation.php"); ?>
     <!--FIN SECTION FORMATION-->
 
-    
+
 <!--SECTION CONTACT-->
     <section id="contact">
         <h1>Contact</h1>
@@ -57,9 +57,10 @@
                 <i class="fa-solid fa-arrow-right-long"></i>
                 <span class="arrow-color-right">Page suivante</span>
             </a>
-        </footer>      
+        </footer>
     </section>
 <!--FIN SECTION CONTACT-->
+
 
     <script src="https://kit.fontawesome.com/9dc810df0d.js" crossorigin="anonymous"></script>
     <script src="assets/js/site.js"></script> 
