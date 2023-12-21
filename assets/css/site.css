@@ -59,7 +59,7 @@ nav .sous li:nth-child(2) a:hover{background-color:#dda148;}
 nav .sous li:nth-child(3) a:hover{background-color:#9b443f;}
 nav .sous li:nth-child(4) a:hover{background-color:#4682b4;}
 nav .sous li:nth-child(5) a:hover{background-color:#76877d;}
-nav .sous li:nth-child(6) a:hover{background-color:#84476c;}
+nav .sous li:nth-child(6) a:hover{background-color:#aca9e2;}
 nav .sous li:nth-child(7) a:hover{background-color:#FFFFFF; color:#0a66c2;}
 nav .sous li:nth-child(8) a:hover{background-color:#353535;}
 
@@ -104,7 +104,7 @@ section:nth-child(3) h1{background-color:#dda148;}
 section:nth-child(4) h1{background-color:#9b443f;}
 section:nth-child(5) h1{background-color:#4682b4;}
 section:nth-child(6) h1{background-color:#76877d;}
-section:nth-child(7) h1{background-color:#84476c;}
+section:nth-child(7) h1{background-color:#aca9e2;}
 
 /*************************************************************
 *********** FOOTER
@@ -197,10 +197,10 @@ footer a{
 
 .progress div{height:100%;}
 
-.progress .barre10, .progress .barre20, .progress .barre30{background-color: #9b443f;}
-.progress .barre40, .progress .barre50, .progress .barre60{background-color: #dda148;}
-.progress .barre70, .progress .barre80, .progress .barre90{background-color: #6f9457;}
-.progress .barre100{background-color: #4682b4;}
+.progress .barre10, .progress .barre20, .progress .barre30{background-color:#9b443f;}
+.progress .barre40, .progress .barre50, .progress .barre60{background-color:#dda148;}
+.progress .barre70, .progress .barre80, .progress .barre90{background-color:#6f9457;}
+.progress .barre100{background-color:#4682b4;}
 
 /**********FIN BARRES DE PROGRESSION**********/
 
@@ -224,7 +224,7 @@ footer a{
 .contenu-competences .titre{text-transform:uppercase; background-color:#9b443f;}
 .contenu-experience .titre{text-transform:uppercase; background-color:#4682b4;}
 .contenu-formation .titre{text-transform:uppercase; background-color:#76877d;}
-.contenu-couleur{background-color: #535353;}
+.contenu-couleur{background-color:#535353;}
 .contenu{background-color:#353535;}
 
 /*************************************************************
@@ -237,14 +237,14 @@ footer a{
 }
 
 .contenu-experience ul, .contenu-formation ul{
-    padding-left: 20px;
+    padding-left:20px;
 }
 
 .cv img{
 height:35px;
 width:35px;
-display: inline-block;
-transition: transform 0.3s ease-in-out;
+display:inline-block;
+transition:transform 0.3s ease-in-out;
 }
 
 .cv img:hover{
@@ -271,7 +271,9 @@ transition: transform 0.3s ease-in-out;
     }
 }
 
-/**************ACCORDEON**************/
+/*************************************************************
+*********** ACCORDEON
+**************************************************************/
 
 details{
     padding-right:20px;
@@ -282,17 +284,73 @@ summary{
     cursor:pointer;
 }
 
-details summary::before {
+details summary::before{
     content: "+";
-    display: inline-block;
+    display:inline-block;
     font-size: 22px;
     transition: transform 0.75s ease-out;
     padding: 0px 10px 7px 10px;
     font-weight: bolder;
 }
 
-details[open] summary::before {
+details[open] summary::before{
     transform: rotate(360deg);
     content: "-";
 }
-/**************FIN ACCORDEON**************/
+
+/*************************************************************
+*********** CONTACT
+**************************************************************/
+
+.contenu-contact{
+    display:flex;
+    justify-content:center;
+}
+
+form{
+    width:40vw;
+    padding:20px;
+    background-color:#353535;
+}
+
+label{
+    display:block;
+    margin-bottom:7px;
+    font-size:16px;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+input, textarea, button{
+    width:100%;
+    padding:7px;
+    margin-bottom:14px;
+    box-sizing:border-box;
+}
+
+textarea{
+    height:70px;
+    overflow:auto;
+    resize:none;
+}
+
+button{
+    background-color:#aca9e2;
+    color:#FFFFFF;
+    border:none;
+    padding:10px;
+    cursor:pointer;
+    text-transform:uppercase;
+}
+
+.rgpd{
+    background-color: #535353;
+    width:auto;
+    text-align:center;
+    font-size:16px;
+    margin-top:10px;
+}
+
+.rgpd_titre{
+    text-transform:uppercase;
+}
