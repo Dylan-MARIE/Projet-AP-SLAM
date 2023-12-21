@@ -354,3 +354,13 @@ details[open] summary::before{
     transform:rotate(360deg);
     content:"-";
 }
+
+/*************************************************************
+*********** CONTACT | ERREUR
+**************************************************************/
+
+.erreur{
+    margin-top:300px;
+    color:#FFFFFF;
+    margin-left:300px;
+}
