@@ -132,7 +132,7 @@ footer a{
 
 .arrow-color-left span, .arrow-color-right span{
     opacity:0;
-    transition: 0.5s;
+    transition:0.5s;
 }
 
 .arrow-color-left:hover span, .arrow-color-right:hover span{
@@ -182,10 +182,8 @@ footer a{
 }
 
 /*************************************************************
-*********** COMPETENCES
+*********** COMPETENCES (BARRES DE PROGRESSION)
 **************************************************************/
-
-/**********DEBUT BARRES DE PROGRESSION**********/
 
 .progress{
     background-color:#dbdbdb;
@@ -202,7 +200,9 @@ footer a{
 .progress .barre70, .progress .barre80, .progress .barre90{background-color:#6f9457;}
 .progress .barre100{background-color:#4682b4;}
 
-/**********FIN BARRES DE PROGRESSION**********/
+/*************************************************************
+*********** COMPETENCES | EXPERIENCE | FORMATION
+**************************************************************/
 
 .contenu-competences, .contenu-experience, .contenu-formation{
     font-size:17px;
@@ -228,7 +228,7 @@ footer a{
 .contenu{background-color:#353535;}
 
 /*************************************************************
-*********** EXPERIENCE
+*********** EXPERIENCE | FORMATION
 **************************************************************/
 
 #experience, #formation{
@@ -248,54 +248,7 @@ transition:transform 0.3s ease-in-out;
 }
 
 .cv img:hover{
-    transform: scale(1.25);
-}
-
-/*************************************************************
-*********** RESPONSIVE DESIGN
-**************************************************************/
-
-@media (max-width: 550px){
-    section h1{
-        left:100px;
-        right:0px;
-    }
-    nav{
-        width:100px;
-    }
-    nav .sous{
-        width:100vw;
-    }
-    footer span{
-        visibility: hidden;
-    }
-}
-
-/*************************************************************
-*********** ACCORDEON
-**************************************************************/
-
-details{
-    padding-right:20px;
-}
-
-summary{
-    list-style-type: none;
-    cursor:pointer;
-}
-
-details summary::before{
-    content: "+";
-    display:inline-block;
-    font-size: 22px;
-    transition: transform 0.75s ease-out;
-    padding: 0px 10px 7px 10px;
-    font-weight: bolder;
-}
-
-details[open] summary::before{
-    transform: rotate(360deg);
-    content: "-";
+    transform:scale(1.25);
 }
 
 /*************************************************************
@@ -353,4 +306,51 @@ button{
 
 .rgpd_titre{
     text-transform:uppercase;
+}
+
+/*************************************************************
+*********** RESPONSIVE DESIGN
+**************************************************************/
+
+@media (max-width: 550px){
+    section h1{
+        left:100px;
+        right:0px;
+    }
+    nav{
+        width:100px;
+    }
+    nav .sous{
+        width:100vw;
+    }
+    footer span{
+        visibility:hidden;
+    }
+}
+
+/*************************************************************
+*********** ACCORDEON
+**************************************************************/
+
+details{
+    padding-right:20px;
+}
+
+summary{
+    list-style-type:none;
+    cursor:pointer;
+}
+
+details summary::before{
+    content:"+";
+    display:inline-block;
+    font-size: 22px;
+    transition:transform 0.75s ease-out;
+    padding:0px 10px 7px 10px;
+    font-weight:bolder;
+}
+
+details[open] summary::before{
+    transform:rotate(360deg);
+    content:"-";
 }

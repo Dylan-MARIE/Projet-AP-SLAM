@@ -7,23 +7,23 @@ competences:
         niveau: 80
       - nom: CSS
         niveau: 80
-      - nom: JavaScript
-        niveau: 40
-      - nom: PHP
-        niveau: 30
       - nom: SQL
-        niveau: 20
+        niveau: 50
+      - nom: PHP
+        niveau: 50
+      - nom: JavaScript
+        niveau: 30
   
   - domaine: Réseau
     contenu:
       - nom: Adressage IP
         niveau: 100
       - nom: Modèle OSI
-        niveau: 80
+        niveau: 90
       - nom: Packet Tracer
-        niveau: 70
-      - nom: Analyse de trames
-        niveau: 60
+        niveau: 50
+      - nom: Installation de services sous Debian Linux
+        niveau: 80
   
   - domaine: Langues
     contenu:
@@ -33,3 +33,23 @@ competences:
         niveau: 60
       - nom: Espagnol
         niveau: 20
+    
+  - domaine: Certification MOOC CNIL
+    contenu:
+      - nom : Module 1 | Le RGPD et ses notions clés
+        niveau : 87
+      - nom : Module 2 | Les principes de la protection des données
+        niveau : 81
+      - nom : Module 3 | Les responsabilités des acteurs
+        niveau : 93
+
+  - domaine: Certification MOOC SecNumAcadémie
+    contenu:
+      - nom : Module 1 | Panorama de la SSI
+        niveau : 92
+      - nom : Module 2 | Sécurité de l'authentification
+        niveau : 92
+      - nom : Module 3 | Sécurité sur Internet
+        niveau : 94
+      - nom : Module 4 | Sécurité du poste de travail et nomadisme
+        niveau : 96
