@@ -24,9 +24,10 @@
 
         <details class="rgpd">
         <summary class="rgpd_titre">Règlement Général sur la Protection des Données</summary>
-            Sur ce site, votre vie privée est respectée et le Règlement Général sur la Protection des Données est appliqué. 
-            Les informations que vous fournissez via ce formulaire ne seront utilisées que dans le but spécifié et ne seront pas 
-            conservées au-delà de la période nécessaire pour atteindre cet objectif. // La récupération des données ne sert qu'à l'envoi d'un mail et ces données ne sont pas stockées.
+            Ce site respecte la vie privée des personnes conformément au Règlement Général sur la Protection des Données (RGPD). 
+            Les données fournies via le formulaire sont utilisées uniquement pour l'envoi d'emails, sans conservation au-delà de l'objectif spécifié.
+            Davantage d'informations concernant le RGPD et le traitement des données personnelles sont disponibles sur le site officiel de la 
+            <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" class="cnil" target="_blank">CNIL</a>.
         </details>
     </form>
     </div>
