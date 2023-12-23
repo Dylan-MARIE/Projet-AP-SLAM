@@ -5,7 +5,7 @@
 <section id="contact">
     <h1>Contact</h1>
     <div class="contenu-contact">
-    <form action="index.php" method="post">
+    <form action="index.php" method="post" id="contact-form">
         <label for="nom">Nom de l'expéditeur :</label>
         <input type="text" id="nom" name="nom" required>
 
@@ -18,8 +18,7 @@
         <label for="message">Contenu du message :</label>
         <textarea id="message" name="message" required></textarea>
 
-        <label for="captcha">Captcha → 2 + 2 =</label>
-        <input type="number" id="captcha" name="captcha" required>
+        <div class="g-recaptcha" data-sitekey="6LfqqzopAAAAAA1-KHPbW9pJdpsAFKuQVWY9JeT9" data-callback="onSubmit"></div>
 
         <button type="submit">Envoyer le message</button>
 
