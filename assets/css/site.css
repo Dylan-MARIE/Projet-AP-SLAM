@@ -360,7 +360,7 @@ details[open] summary::before{
 **************************************************************/
 
 .erreur{
-    margin-top:300px;
+    padding-top:300px;
     color:#FFFFFF;
-    margin-left:300px;
+    padding-left:300px;
 }

@@ -46,16 +46,8 @@
     <!--SECTION CONTACT-->
     <?php include ("php/contact.php"); ?>
     <!--FIN SECTION CONTACT-->
-
-    <?php
-    if(!empty($_POST)){
-        include("backend/formulaire.php");
-        if(isset($error)){
-            echo "<div class='erreur'>$error</div>";
-        }
-    }
-    ?>
-
+    
+    
     <script src="https://kit.fontawesome.com/9dc810df0d.js" crossorigin="anonymous"></script>
     <script src="assets/js/site.js"></script> 
 </body>
