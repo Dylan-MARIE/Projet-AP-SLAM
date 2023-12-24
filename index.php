@@ -13,8 +13,8 @@
         include("lib/yaml/yaml.php"); 
     ?>
     <?php
-    if (isset($_GET['message'])) {
-        $messageType = $_GET['message'];
+    if (isset($_POST['message'])) {
+        $messageType = $_POST['message'];
     
         if ($messageType === 'success') {
             $message = "Le formulaire a été soumis avec succès !";
