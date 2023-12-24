@@ -12,6 +12,22 @@
         include_once 'vendor/autoload.php';
         include("lib/yaml/yaml.php"); 
     ?>
+    <?php
+    if (isset($_GET['message'])) {
+        $messageType = $_GET['message'];
+    
+        if ($messageType === 'success') {
+            $message = "Le formulaire a été soumis avec succès !";
+            $messageClass = "success";
+        } elseif ($messageType === 'error') {
+            $message = "Une erreur s'est produite lors de la soumission du formulaire.";
+            $messageClass = "error";
+        } elseif ($messageType === 'captcha-error') {
+            $message = "Erreur de vérification reCAPTCHA. Veuillez réessayer.";
+            $messageClass = "error";
+        }
+    }
+    ?>
 </head>
 <body>
     <!--MENU DE NAVIGATION-->
@@ -48,7 +64,10 @@
     <?php include ("php/contact.php"); ?>
     <!--FIN SECTION CONTACT-->
     
-    
+    <?php if (isset($message)): ?>
+        <div class="message <?php echo $messageClass; ?>"><?php echo $message; ?></div>
+    <?php endif; ?>
+
     <script src="https://kit.fontawesome.com/9dc810df0d.js" crossorigin="anonymous"></script>
     <script src="assets/js/site.js"></script> 
 </body>

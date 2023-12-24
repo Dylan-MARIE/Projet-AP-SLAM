@@ -181,6 +181,20 @@ footer a{
     }
 }
 
+.message{
+    padding-top:300px;
+    padding-left:200px;
+    color:#dbdbdb;
+}
+
+.success{
+    color:#6f9457;
+}
+
+.error{
+    color:#9b443f;
+}
+
 /*************************************************************
 *********** COMPETENCES (BARRES DE PROGRESSION)
 **************************************************************/
