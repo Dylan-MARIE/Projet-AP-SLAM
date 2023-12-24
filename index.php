@@ -35,9 +35,6 @@
         if(isset($error)){
             echo "<div class='erreur'>$error</div>";
         }
-        if(isset($success)){
-            echo "<div class='success'>$success</div>";
-        }
     }
     ?>
 
