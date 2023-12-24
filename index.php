@@ -9,64 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <?php 
-        include_once 'vendor/autoload.php';
+        include_once "vendor/autoload.php";
         include("lib/yaml/yaml.php"); 
-    ?>
-    <?php
-    if (isset($_POST['message'])) {
-        $messageType = $_POST['message'];
-    
-        if ($messageType === 'success') {
-            $message = "Le formulaire a été soumis avec succès !";
-            $messageClass = "success";
-        } elseif ($messageType === 'error') {
-            $message = "Une erreur s'est produite lors de la soumission du formulaire.";
-            $messageClass = "error";
-        } elseif ($messageType === 'captcha-error') {
-            $message = "Erreur de vérification reCAPTCHA. Veuillez réessayer.";
-            $messageClass = "error";
-        }
-    }
     ?>
 </head>
 <body>
-    <!--MENU DE NAVIGATION-->
     <?php include("php/menu.php"); ?>
-    <!--FIN MENU DE NAVIGATION-->
 
-
-    <!--SECTION ACCUEIL-->
     <?php include("php/accueil.php"); ?>
-    <!--FIN SECTION ACCUEIL-->
 
-
-    <!--SECTION A PROPOS-->
     <?php include("php/a-propos.php"); ?>
-    <!--FIN SECTION A PROPOS-->
 
-
-    <!--SECTION COMPETENCES-->
     <?php include ("php/competences.php"); ?>
-    <!--FIN SECTION COMPETENCES-->
 
-
-    <!--SECTION EXPERIENCE-->
     <?php include ("php/experience.php"); ?>
-    <!--FIN SECTION EXPERIENCE-->
 
-
-    <!--SECTION FORMATION-->
     <?php include ("php/formation.php"); ?>
-    <!--FIN SECTION FORMATION-->
 
-
-    <!--SECTION CONTACT-->
     <?php include ("php/contact.php"); ?>
-    <!--FIN SECTION CONTACT-->
+
     
-    <?php if (isset($message)): ?>
-        <div class="message <?php echo $messageClass; ?>"><?php echo $message; ?></div>
-    <?php endif; ?>
+    <?php
+    if(!empty($_POST)){
+        include("backend/formulaire.php");
+        if(isset($error)){
+            echo "<div class='erreur'>$error</div>";
+        }
+    }
+    ?>
 
     <script src="https://kit.fontawesome.com/9dc810df0d.js" crossorigin="anonymous"></script>
     <script src="assets/js/site.js"></script> 

@@ -181,21 +181,9 @@ footer a{
     }
 }
 
-.message {
-    padding: 200px;
-    margin: 20px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.success {
-    background-color: #6f9457;
-    color: #fff; 
-}
-
-.error {
-    background-color: #9b443f;
-    color: #fff; 
+.erreur{
+    padding-left:200px;
+    padding-top:200px;
 }
 
 
