@@ -50,11 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->send();
             echo 'Le message a été envoyé.';
         } catch (\Error $e) {
-            $error = "Le message n'a pas été envoyé ! Mailer Error: {$mail->ErrorInfo}";
-        }
-
-        if (isset($error)) {
-            echo "<div class='erreur'>$error</div>";
+            echo "Le message n'a pas été envoyé ! Mailer Error: {$mail->ErrorInfo}";
         }
     } else {
         echo "reCAPTCHA verification failed.";
