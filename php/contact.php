@@ -5,7 +5,7 @@
 <section id="contact">
     <h1>Contact</h1>
     <div class="contenu-contact">
-    <form action="backend/formulaire.php" method="post" id="contact-form" onsubmit="return validateForm()">
+    <form action="../backend/formulaire.php" method="post" id="contact-form" onsubmit="return validateForm()">
         <label for="nom">Nom de l'expéditeur :</label>
         <input type="text" id="nom" name="nom" required>
 
