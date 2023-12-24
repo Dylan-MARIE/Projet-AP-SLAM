@@ -56,6 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (isset($error)) {
             echo "<div class='erreur'>$error</div>";
+            exit;
         }
     } else {
         echo "reCAPTCHA verification failed.";
