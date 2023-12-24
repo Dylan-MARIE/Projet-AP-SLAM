@@ -181,19 +181,23 @@ footer a{
     }
 }
 
-.message{
-    padding-top:300px;
-    padding-left:200px;
-    color:#dbdbdb;
+.message {
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-.success{
-    color:#6f9457;
+.success {
+    background-color: #6f9457;
+    color: #fff; 
 }
 
-.error{
-    color:#9b443f;
+.error {
+    background-color: #9b443f;
+    color: #fff; 
 }
+
 
 /*************************************************************
 *********** COMPETENCES (BARRES DE PROGRESSION)
