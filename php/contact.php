@@ -1,11 +1,11 @@
 <?php
-    $data=yaml_parse_file('data/contact.yaml');
+    $data = yaml_parse_file('data/contact.yaml');
 ?>
 
 <section id="contact">
     <h1>Contact</h1>
     <div class="contenu-contact">
-    <form action="index.php" method="post" id="contact-form">
+    <form action="formulaire.php" method="post" id="contact-form">
         <label for="nom">Nom de l'expéditeur :</label>
         <input type="text" id="nom" name="nom" required>
 
@@ -23,7 +23,7 @@
         <button type="submit" id="envoyerBtn">Envoyer le message</button>
 
         <details class="rgpd">
-        <summary class="rgpd_titre">Règlement Général sur la Protection des Données</summary>
+            <summary class="rgpd_titre">Règlement Général sur la Protection des Données</summary>
             Ce site respecte la vie privée des personnes conformément au Règlement Général sur la Protection des Données (RGPD). 
             Les données fournies via le formulaire sont utilisées uniquement pour l'envoi d'emails, sans conservation au-delà de l'objectif spécifié.
             Davantage d'informations concernant le RGPD et le traitement des données personnelles sont disponibles sur le site officiel de la 

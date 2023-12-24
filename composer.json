@@ -1,6 +1,7 @@
 {
     "require": {
         "phpmailer/phpmailer": "^6.9",
-        "symfony/yaml": "^7.0"
+        "symfony/yaml": "^7.0",
+        "google/recaptcha": "^1.3"
     }
 }

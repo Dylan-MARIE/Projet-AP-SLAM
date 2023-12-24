@@ -1,17 +1,21 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
+use ReCaptcha\ReCaptcha;
 
 // Vérification reCAPTCHA
 $recaptcha_secret_key = '6LfqqzopAAAAAImz_I94495ymri7oU0nP4RTvSDy';
-$recaptcha_response = $_POST['g-recaptcha-response'];
-$recaptcha_url = "https://www.google.com/recaptcha/api/siteverify?secret={$recaptcha_secret_key}&response={$recaptcha_response}";
-$recaptcha = json_decode(file_get_contents($recaptcha_url));
+$recaptcha = new ReCaptcha($recaptcha_secret_key);
 
+$gRecaptchaResponse = $_POST['g-recaptcha-response'];
+$remoteIp = $_SERVER['REMOTE_ADDR'];
+$resp = $recaptcha->setExpectedHostname('srv1-vm-1137.sts-sio-caen.info')
+                  ->verify($gRecaptchaResponse, $remoteIp);
 
+if ($resp->isSuccess()) {
+    // Si la vérification reCAPTCHA est réussie, traiter le reste du formulaire
     if (!empty($_POST)) {
-        $mail = new PHPMailer(true);    
-
+        $mail = new PHPMailer(true);
         try {
             // Configuration du serveur de messagerie
             //$mail->SMTPDebug = SMTP::DEBUG_SERVER;
@@ -42,4 +46,8 @@ $recaptcha = json_decode(file_get_contents($recaptcha_url));
             echo "<div class='erreur'>$error</div>";
         }
     }
+} else {
+    $errors = $resp->getErrorCodes();
+    var_dump($errors);
+}
 ?>
