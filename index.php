@@ -20,13 +20,13 @@
 
     <?php include("php/a-propos.php"); ?>
 
-    <?php include ("php/competences.php"); ?>
+    <?php include("php/competences.php"); ?>
 
-    <?php include ("php/experience.php"); ?>
+    <?php include("php/experience.php"); ?>
 
-    <?php include ("php/formation.php"); ?>
+    <?php include("php/formation.php"); ?>
 
-    <?php include ("php/contact.php"); ?>
+    <?php include("php/contact.php"); ?>
 
     
     <?php
@@ -34,6 +34,9 @@
         include("backend/formulaire.php");
         if(isset($error)){
             echo "<div class='erreur'>$error</div>";
+        }
+        if(isset($success)){
+            echo "<div class='success'>$success</div>";
         }
     }
     ?>
