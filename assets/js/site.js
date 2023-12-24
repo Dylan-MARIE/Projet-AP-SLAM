@@ -2,6 +2,12 @@ window.onload = function(){
     window.location.href = "#accueil";
 };
 
-function onSubmit(token) {
-    document.getElementById("contact-form").submit();
-}
+document.getElementById("envoyerBtn").addEventListener("click", function() {
+    var recaptchaResponse = grecaptcha.getResponse();
+
+    if (recaptchaResponse.length === 0) {
+        alert("Veuillez valider le reCAPTCHA avant d'envoyer le formulaire.");
+    } else {
+        document.getElementById("contact-form").submit();
+    }
+});

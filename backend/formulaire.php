@@ -8,11 +8,7 @@ $recaptcha_response = $_POST['g-recaptcha-response'];
 $recaptcha_url = "https://www.google.com/recaptcha/api/siteverify?secret={$recaptcha_secret_key}&response={$recaptcha_response}";
 $recaptcha = json_decode(file_get_contents($recaptcha_url));
 
-if (!$recaptcha->success) {
-    // Échec de la vérification reCAPTCHA, traitement de l'erreur
-    $error = "Échec de la vérification reCAPTCHA. Veuillez confirmer que vous n'êtes pas un robot.";
-} else {
-    // Si la vérification reCAPTCHA est réussie, traiter le formulaire
+
     if (!empty($_POST)) {
         $mail = new PHPMailer(true);    
 
@@ -41,11 +37,9 @@ if (!$recaptcha->success) {
         } catch (Exception $e) {
             $error = "Le message n'a pas été envoyé ! Mailer Error: {$mail->ErrorInfo}";
         }
-    }
-}
 
-// Afficher l'erreur si elle existe
-if (isset($error)) {
-    echo "<div class='erreur'>$error</div>";
-}
+        if (isset($error)) {
+            echo "<div class='erreur'>$error</div>";
+        }
+    }
 ?>

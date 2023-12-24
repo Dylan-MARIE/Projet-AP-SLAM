@@ -18,9 +18,9 @@
         <label for="message">Contenu du message :</label>
         <textarea id="message" name="message" required></textarea>
 
-        <div class="g-recaptcha" data-sitekey="6LfqqzopAAAAAA1-KHPbW9pJdpsAFKuQVWY9JeT9" data-callback="onSubmit"></div>
+        <div class="g-recaptcha" data-sitekey="6LfqqzopAAAAAA1-KHPbW9pJdpsAFKuQVWY9JeT9"></div>
 
-        <button type="submit">Envoyer le message</button>
+        <button type="submit" id="envoyerBtn">Envoyer le message</button>
 
         <details class="rgpd">
         <summary class="rgpd_titre">Règlement Général sur la Protection des Données</summary>
