@@ -50,7 +50,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->send();
             echo 'Le message a été envoyé.';
         } catch (\Error $e) {
-            var_dump($e);
             $error = "Le message n'a pas été envoyé ! Mailer Error: {$mail->ErrorInfo}";
         }
 
