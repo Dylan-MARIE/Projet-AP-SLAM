@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->Body = $_POST['message'] ?? 'This is the HTML message body <b>in bold!</b>';
 
             $mail->send();
-            $success = "Le message a été envoyé.";
+            echo 'Le message a été envoyé.';
         } catch (Exception $e) {
             $error = "Le message n'a pas été envoyé ! Mailer Error: {$mail->ErrorInfo}";
         }

@@ -31,16 +31,10 @@
     
     <?php
     if(!empty($_POST)){
-        include("backend/formulaire.php");
-        if(isset($error)){
-            echo "<div class='erreur'>$error</div>";
-        }
-        if(isset($success)){
-            echo "<div class='success'>$success</div>";
-        }
-    }
+       var_dump($_POST);
+    }   
     ?>
-
+    
     <script src="https://kit.fontawesome.com/9dc810df0d.js" crossorigin="anonymous"></script>
     <script src="assets/js/site.js"></script> 
 </body>
