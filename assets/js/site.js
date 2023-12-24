@@ -5,7 +5,7 @@ window.onload = function(){
 function validateForm() {
     var response = grecaptcha.getResponse();
     if (response.length == 0) {
-        alert('Veuillez valider le reCAPTCHA avant d\'envoyer le formulaire.');
+        alert("Veuillez valider le reCAPTCHA avant d'envoyer le formulaire.");
         return false;
     }
     return true;
