@@ -2,7 +2,9 @@ window.onload = function(){
     window.location.href = "#accueil";
 };
 
-document.getElementById("envoyerBtn").addEventListener("click", function() {
+document.getElementById("envoyerBtn").addEventListener("click", function(event) {
+    event.preventDefault();
+
     var recaptchaResponse = grecaptcha.getResponse();
 
     if (recaptchaResponse.length === 0) {
