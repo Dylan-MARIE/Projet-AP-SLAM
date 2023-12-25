@@ -8,9 +8,10 @@ formulaire:
   bouton: Envoyer le message
   annexe: Règlement Général sur la Protection des Données
   rgpd: 
-    §1: "Ce site respecte la vie privée des personnes conformément au Règlement Général sur la Protection des Données (RGPD). 
-        Les données fournies via le formulaire sont utilisées uniquement pour l'envoi d'emails, sans conservation au-delà de 
-        l'objectif spécifié. Davantage d'informations concernant le RGPD et le traitement des données personnelles sont 
-        disponibles sur le site officiel de la "
+    §1: "Ce site respecte votre vie privée conformément au Règlement Général sur la Protection des Données (RGPD).
+        Aucune collecte de données personnelles n'est effectuée via ce site.
+        Les données que vous fournissez via le formulaire ne sont utilisées que dans le but spécifié, à savoir l'envoi d'emails.
+        Aucune donnée personnelle n'est conservée au-delà de cet objectif.
+        Davantage d'informations concernant le RGPD et le traitement des données personnelles sont disponibles sur le site officiel de la "
     §2: CNIL
     lien: https://www.cnil.fr/fr/reglement-europeen-protection-donnees
