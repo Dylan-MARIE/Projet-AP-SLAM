@@ -31,4 +31,4 @@
     <script src="https://kit.fontawesome.com/9dc810df0d.js" crossorigin="anonymous"></script>
     <script src="assets/js/site.js"></script> 
 </body>
-</html>
+</html
