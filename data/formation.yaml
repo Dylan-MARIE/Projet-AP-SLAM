@@ -26,8 +26,8 @@ formation:
       - lieu: Armée de l'Air | BA 721 Rochefort | 2022
         description: 
           - → Formation militaire initiale ←
-          - Tir militaire
           - Stage de nomadisation
+          - IST-C et tir de combat
           - Technique d'Intervention Opérationnelle Rapprochée
 
   - domaine: Baccalauréat scientifique option SVT

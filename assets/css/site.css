@@ -9,7 +9,7 @@ body{
 }
 
 /*************************************************************
-*********** NAV
+*********** MENU
 **************************************************************/
 
 nav{
@@ -146,7 +146,7 @@ footer a{
 }
 
 /*************************************************************
-*********** ACCUEIL | A-PROPOS
+*********** ACCUEIL | A PROPOS
 **************************************************************/
 
 .contenu-accueil img, .contenu-a-propos img{
@@ -180,12 +180,6 @@ footer a{
         transform:rotate(360deg);
     }
 }
-
-.erreur{
-    padding-left:200px;
-    padding-top:200px;
-}
-
 
 /*************************************************************
 *********** COMPETENCES (BARRES DE PROGRESSION)
@@ -341,7 +335,7 @@ button{
 }
 
 /*************************************************************
-*********** ACCORDEON
+** ACCORDEON (COMPETENCES | EXPERIENCE | FORMATION | CONTACT)
 **************************************************************/
 
 details{
@@ -356,7 +350,7 @@ summary{
 details summary::before{
     content:"+";
     display:inline-block;
-    font-size: 22px;
+    font-size:22px;
     transition:transform 0.75s ease-out;
     padding:0px 10px 7px 10px;
     font-weight:bolder;
