@@ -22,5 +22,4 @@ function print_array($data){
 	echo "</pre>";
 }
 
-
 ?>
