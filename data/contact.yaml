@@ -1,8 +1,8 @@
 titre: contact
 
 formulaire:
-  nom: "Nom de l'expéditeur :"
-  email: "Adresse de courriel de l'expéditeur :"
+  nom: "Nom :"
+  email: "Adresse de courriel :"
   objet: "Objet du message :"
   message: "Contenu du message :"
   bouton: Envoyer le message
@@ -12,6 +12,5 @@ formulaire:
         Les données fournies via le formulaire sont utilisées uniquement pour l'envoi d'emails, sans conservation au-delà de 
         l'objectif spécifié. Davantage d'informations concernant le RGPD et le traitement des données personnelles sont 
         disponibles sur le site officiel de la "
-    §2: "CNIL"
-    §3: '.'
+    §2: CNIL
     lien: https://www.cnil.fr/fr/reglement-europeen-protection-donnees

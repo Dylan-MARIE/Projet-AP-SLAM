@@ -20,15 +20,15 @@ competences:
         niveau: 100
       - nom: Modèle OSI
         niveau: 90
-      - nom: Packet Tracer
-        niveau: 50
       - nom: Installation de services sous Debian Linux
         niveau: 80
+      - nom: Packet Tracer
+        niveau: 50
   
   - domaine: Langues
     contenu:
       - nom: Français
-        niveau: 100
+        niveau: 95
       - nom: Anglais
         niveau: 60
       - nom: Espagnol

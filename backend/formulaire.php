@@ -33,14 +33,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'dylan.marie.test@gmail.com'; // Remplacez par votre adresse email
-            $mail->Password = 'test.smtp'; // Remplacez par votre mot de passe
+            $mail->Username = 'dylan.marie.test@gmail.com';
+            $mail->Password = 'test.smtp';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = 465;
 
             // Destinataire
             $mail->setFrom('dylan.marie.test@gmail.com', 'Mailer');
-            $mail->addAddress('dylan.marie.test@gmail.com'); // Remplacez par l'adresse de votre destinataire
+            $mail->addAddress('dylan.marie.test@gmail.com');
 
             // Contenu du mail
             $mail->isHTML(true);

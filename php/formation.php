@@ -7,19 +7,19 @@
     <?php echo '<a href="assets/images/'.$data['cv']['pdf'].'" class="cv" target="_blank"><img src="assets/images/'.$data['cv']['image'].'" alt="Curriculum Vitæ"></a>' ?>
     <div class="contenu-formation">
         <?php
-        foreach ($data['formation'] as $formation){
-            echo '<details>';
-            echo '<summary class="titre">'.$formation['domaine'].'</summary>';
+            foreach ($data['formation'] as $formation){
+                echo '<details>';
+                echo '<summary class="titre">'.$formation['domaine'].'</summary>';
 
-            foreach ($formation['contenu'] as $contenu) {
-                echo '<div class="contenu-couleur">'.$contenu['lieu'].'</div>';
+                foreach ($formation['contenu'] as $contenu) {
+                    echo '<div class="contenu-couleur">'.$contenu['lieu'].'</div>';
 
-                foreach ($contenu['description'] as $description){
-                    echo '<div class="contenu"><ul><li>'.$description.'</li></ul></div>';
+                    foreach ($contenu['description'] as $description){
+                        echo '<div class="contenu"><ul><li>'.$description.'</li></ul></div>';
+                    }
                 }
+                echo '</details>';
             }
-            echo '</details>';
-        }
         ?>
     </div>
     <footer>

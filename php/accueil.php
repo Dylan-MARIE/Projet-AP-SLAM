@@ -6,10 +6,10 @@
     <h1><?= $data['titre'] ?></h1>
     <div class="contenu-accueil">
         <?php
-        echo '<div class="position-image">';
-            echo '<img src="assets/images/'.$data['accueil']['photo'].'" alt="logo">';
-        echo '</div>';
-        echo '<p>'.$data['accueil']['accroche'].' '.$data['accueil']['prenom'].' '.$data['accueil']['nom'].'</p>';
+            echo '<div class="position-image">';
+                echo '<img src="assets/images/'.$data['accueil']['photo'].'" alt="logo">';
+            echo '</div>';
+            echo '<p>'.$data['accueil']['accroche'].' '.$data['accueil']['prenom'].' '.$data['accueil']['nom'].'</p>';
         ?>
     </div>
     <footer>

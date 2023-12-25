@@ -6,14 +6,14 @@
     <h1><?= $data['titre'] ?></h1>
     <div class="contenu-a-propos">
         <?php
-        echo '<div class="position-image">';
-            echo '<img src="assets/images/'.$data['a-propos']['photo'].'" alt="logo">';
-        echo '</div>';
-        echo '<p>'.$data['a-propos']['accroche'].'</p>';
-            
-        foreach($data['a-propos']['paragraphes'] as $paragraphe){
-            echo '<p>'.$paragraphe.'</p>';
-        }
+            echo '<div class="position-image">';
+                echo '<img src="assets/images/'.$data['a-propos']['photo'].'" alt="logo">';
+            echo '</div>';
+            echo '<p>'.$data['a-propos']['accroche'].'</p>';
+                
+            foreach ($data['a-propos']['paragraphes'] as $paragraphe){
+                echo '<p>'.$paragraphe.'</p>';
+            }
         ?>
     </div>
     <footer>
